@@ -1,5 +1,6 @@
 package com.example.sira.myapplication;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -16,7 +17,12 @@ public class MainActivity extends AppCompatActivity {
     public void onClick(View v){
         switch (v.getId()){
             case R.id.btn1:
-                Toast.makeText(this, "SIRA", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Sira and Dongju", Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.btn2:
+                Intent intent = new Intent(this, CalculatorActivity.class); //서브 액티비티와 연결
+                startActivity(intent);
                 break;
         }
     }

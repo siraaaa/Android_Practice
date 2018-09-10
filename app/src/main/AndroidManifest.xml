@@ -10,12 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-            <intent-filter>
+            <intent-filter> <!-- 처음 시작되는 메인을 바꾸어 주려면 intent-filter를 원하는 곳에 적어준다 -->
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- 서브 액티비티 등록 -->
+        <activity android:name=".CalculatorActivity" />
     </application>
 
 </manifest>

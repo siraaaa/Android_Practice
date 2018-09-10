@@ -21,6 +21,12 @@
             android:textColor="@color/colorAccent"
             android:textSize="40sp" />
 
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="298dp"
+            android:layout_height="236dp"
+            app:srcCompat="@drawable/photo" />
+
         <Button
             android:id="@+id/btn1"
             android:layout_width="match_parent"
@@ -28,11 +34,12 @@
             android:onClick="onClick"
             android:text="Toast" />
 
-        <ImageView
-            android:id="@+id/imageView5"
+        <Button
+            android:id="@+id/btn2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/photo" />
+            android:onClick="onClick"
+            android:text="Calculator" />
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
