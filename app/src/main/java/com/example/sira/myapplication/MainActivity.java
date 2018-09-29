@@ -29,6 +29,11 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent2 = new Intent(this, CustomView.class);
                 startActivity(intent2);
                 break;
+
+            case R.id.btn4:
+                Intent intent3 = new Intent(this, EventHanlderActivity.class);
+                startActivity(intent3);
+                break;
         }
     }
 }
