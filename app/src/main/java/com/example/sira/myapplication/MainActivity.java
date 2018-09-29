@@ -24,6 +24,11 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(this, CalculatorActivity.class); //서브 액티비티와 연결, this는 메인 액티비티, 발신자/수신자로 볼 수 있음
                 startActivity(intent);//목적에 따라 달라짐, startService(), startBroadcast() 등등
                 break;
+
+            case R.id.btn3:
+                Intent intent2 = new Intent(this, CustomView.class);
+                startActivity(intent2);
+                break;
         }
     }
 }

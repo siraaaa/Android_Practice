@@ -19,6 +19,8 @@
 
         <!-- 서브 액티비티 등록 -->
         <activity android:name=".CalculatorActivity" />
+        <activity android:name=".CustomView" />
+
     </application>
 
 </manifest>

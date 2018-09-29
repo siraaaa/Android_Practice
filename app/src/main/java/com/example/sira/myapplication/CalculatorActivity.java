@@ -1,5 +1,6 @@
 package com.example.sira.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -118,6 +119,15 @@ public class CalculatorActivity extends AppCompatActivity { //액티비티를 �
         switch (v.getId()){
             case R.id.btnReset:
                 etDisplay.setText(""); //초기화 띄어쓰기 x (띄어쓰기는 아스키코드 13번)
+                break;
+        }
+    }
+
+    public void onClick(View v){
+        switch(v.getId()){
+            case R.id.btnBack:
+                Intent intent = new Intent(this, MainActivity.class);
+                startActivity(intent);
                 break;
         }
     }
